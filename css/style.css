@@ -1,0 +1,22 @@
+#content{
+    display: grid;
+    grid-template-areas: "quote"
+                         "author";
+    width: 20rem;
+    padding: 1.2rem;
+}
+
+#quote{
+    grid-area: "quote";
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#author{
+    grid-area: "author";
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0.5rem;
+}
