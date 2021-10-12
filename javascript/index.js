@@ -10,6 +10,9 @@ fetch('../data/newquotesdata.json')
   .then(response => response.json())
   .then(quotes => {
      const quote = _getRandomQuote(quotes)
+     let msg = new SpeechSynthesisUtterance();
+     msg.text = `${quote.title} - ${quote.author}`
+     window.speechSynthesis.speak(msg);
      quoteElement.innerHTML = quote.title
      authorElement.innerHTML = `- ${quote.author}`
   })
